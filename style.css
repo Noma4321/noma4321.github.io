@@ -85,9 +85,22 @@ a.nav-link {
 	background: var(--main-decor-color);
 }
 
+
 .nav-link:hover {
-	color: #000000;
+    color: #000000;
     background: var(--main-decor-color);
+    animation: round ;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round {
+    from {
+        border-radius:0px;
+    }
+    to {
+        border-radius:10px;
+    }
 }
 
 /*──────────────────
