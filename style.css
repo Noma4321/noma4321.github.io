@@ -79,6 +79,7 @@ a.nav-link {
     animation: round ;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+    transform: translateY(-20);
 }
 
 @keyframes round {
