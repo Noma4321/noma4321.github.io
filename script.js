@@ -1,3 +1,5 @@
+var domain = "https://noma.is-a.dev/";
+
 // header scrolling effect
 $(window).on('scroll', function(){
 	if($(window).scrollTop()){
@@ -35,3 +37,20 @@ const navSlide = () => {
 	}
 
 window.onload = () => navSlide();
+
+
+// Dark / Light theme
+
+function lighttheme() {
+	document.documentElement.style.setProperty('--main-header-background', '#ebe8e8');
+	document.documentElement.style.setProperty('--main-background', '#f2f2f2');
+	document.documentElement.style.setProperty('--main-fonts-color', '#1a1918');
+	document.documentElement.style.setProperty('--active-fonts-color', '#fff');
+}
+
+function darktheme() {
+	document.documentElement.style.setProperty('--main-header-background', '#21252e');
+	document.documentElement.style.setProperty('--main-background', '#0b0c0f');
+	document.documentElement.style.setProperty('--main-fonts-color', '#fff');
+	document.documentElement.style.setProperty('--active-fonts-color', '#000');
+}
